@@ -20,7 +20,6 @@ def parse_by_single_linebreaks(str):
     return list(map(int, str.split()))
 
 def parse_elves(str):
-    # Take a multi-line input and
     return [parse_by_single_linebreaks(elf) for elf in parse_by_double_linebreaks(str)]
 
 def subtotal_elf(elf):
